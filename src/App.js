@@ -1,24 +1,39 @@
 import React from 'react';
-import logo from './logo.svg';
+import { VictoryPie } from 'victory';
+import { calendarDates } from './calendarDates.js';
+import { isToday } from './js/isToday.js';
+
 import './App.css';
+
+//       <!-- circle cx="200" cy="200" r="115" fill="none" stroke="black" strokeWidth={3} */
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <svg viewBox="0 0 400 400" >
+      <VictoryPie
+        standalone={false}
+        width={400} height={400}
+        data={calendarDates}
+        innerRadius={120}
+        labels={() => null}
+          style={{
+            data: {
+              fill: (d) => {
+                let dateString = d.x;
+                if (isToday(dateString)) {
+                  return '#00F';
+                } else {
+                  return d.fill;
+                }
+              }
+            }
+          }}
+      />
+      <circle cx="200" cy="200" r="115" fill="none" stroke="black" strokeWidth={3} />
+    </svg>
+    
     </div>
   );
 }
