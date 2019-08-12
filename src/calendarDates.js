@@ -2,7 +2,8 @@ export const calendarDates = [
   {
     "x": "June 21",
     "y": 1,
-    "fill": "#666"
+    "fill": "#666",
+    "name": "mabon"
   },
   {
     "x": "June 22",

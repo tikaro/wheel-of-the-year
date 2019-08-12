@@ -1,10 +1,11 @@
 export const isToday = (d) => {
-  console.log(d);
   const today = new Date();
   const months = "January February March April May June July August September October November December".split(' ');
-  const currentMonthNumber = today.getMonth();
-  const currentMonthName = months[currentMonthNumber];
-  const currentDay = today.getDay();
+  const currentMonthIndex = today.getMonth();
+  const currentMonthName = months[currentMonthIndex];
+  const currentDay = today.getDate();
   const dayToMatch = `${currentMonthName} ${currentDay}`;
-  return d === dayToMatch;
+  var isToday = ( d === dayToMatch );
+  // console.log(`Today is ${today.toString()}. ${d} ${isToday? 'is':'is not'} today.`)
+  return isToday;
 }
