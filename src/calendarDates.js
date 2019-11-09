@@ -3,7 +3,7 @@ export const calendarDates = [
     "x": "June 21",
     "y": 1,
     "fill": "#666",
-    "name": "mabon"
+    "label": "夏至"
   },
   {
     "x": "June 22",
@@ -83,7 +83,8 @@ export const calendarDates = [
   {
     "x": "July 7",
     "y": 1,
-    "fill": "#999"
+    "fill": "#999",
+    "label": "小暑"
   },
   {
     "x": "July 8",
@@ -163,7 +164,8 @@ export const calendarDates = [
   {
     "x": "July 23",
     "y": 1,
-    "fill": "#999"
+    "fill": "#999",
+    "label": "大暑"
   },
   {
     "x": "July 24",
@@ -243,7 +245,8 @@ export const calendarDates = [
   {
     "x": "August 8",
     "y": 1,
-    "fill": "#000"
+    "fill": "#000",
+    "label": "立秋"
   },
   {
     "x": "August 9",
