@@ -11,7 +11,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-    <svg viewBox="0 0 400 400" >
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
       <VictoryPie
         standalone={false}
         width={400} height={400}
