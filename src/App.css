@@ -12,3 +12,24 @@ svg {
 .App-link {
   color: #61dafb;
 }
+
+/* Color Theme Swatches in Hex */
+.Purple-Carrot-shirt-green1-hex { color: #379E00; }
+.Purple-Carrot-shirt-green2-hex { color: #6AFF19; }
+.Purple-Carrot-shirt-green3-hex { color: #52EB00; }
+.Purple-Carrot-shirt-purple1-hex { color: #9E009E; }
+.Purple-Carrot-shirt-purple2-hex { color: #EA00EB; }
+
+/* Color Theme Swatches in RGBA */
+.Purple-Carrot-shirt-1-rgba { color: rgba(55, 158, 0, 1); }
+.Purple-Carrot-shirt-2-rgba { color: rgba(106, 255, 25, 1); }
+.Purple-Carrot-shirt-3-rgba { color: rgba(82, 235, 0, 1); }
+.Purple-Carrot-shirt-4-rgba { color: rgba(158, 0, 158, 1); }
+.Purple-Carrot-shirt-5-rgba { color: rgba(234, 0, 235, 1); }
+
+/* Color Theme Swatches in HSLA */
+.Purple-Carrot-shirt-1-hsla { color: hsla(99, 100, 30, 1); }
+.Purple-Carrot-shirt-2-hsla { color: hsla(98, 100, 54, 1); }
+.Purple-Carrot-shirt-3-hsla { color: hsla(99, 100, 46, 1); }
+.Purple-Carrot-shirt-4-hsla { color: hsla(300, 100, 30, 1); }
+.Purple-Carrot-shirt-5-hsla { color: hsla(299, 100, 46, 1); }

@@ -22,13 +22,14 @@ function App() {
         style={{
           labels: { 
             fontFamily: "'Noto Sans TC', sans-serif;",
-            fontSize: "14px"
+            fontSize: "14px",
+            fill: "#6AFF19"
           },
           data: {
             fill: (d) => {
               let dateString = d.x;
               if (isToday(dateString)) {
-                return '#00F';
+                return '#EA00EB';
               } else {
                 return d.fill;
               }
@@ -36,7 +37,7 @@ function App() {
           }
         }}
       />
-      <circle cx="200" cy="200" r="115" fill="none" stroke="black" strokeWidth={3} />
+      <circle cx="200" cy="200" r="115" fill="none" stroke="#9E009E" strokeWidth={3} />
     </svg>
     
     </div>
