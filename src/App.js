@@ -1,5 +1,5 @@
 import React from 'react';
-import { VictoryPie } from 'victory';
+import { VictoryPie, VictoryLabel } from 'victory';
 import { calendarDates } from './calendarDates.js';
 import { isToday } from './js/isToday.js';
 
@@ -27,6 +27,20 @@ function App() {
           }
         }}
       />
+      <VictoryLabel
+          textAnchor="middle"
+          style={{ 
+            fontFamily: "'Noto Sans TC', sans-serif;",
+            fontSize: "14px",
+            fill: "#379E00"
+           }}
+          x={200} y={200}
+          text= { () => {
+              const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
+              return new Date().toLocaleDateString("en-US", options)
+            }
+          }
+        />
       <circle cx="200" cy="200" r="115" fill="none" stroke="#9E009E" strokeWidth={3} />
     </svg>
     
