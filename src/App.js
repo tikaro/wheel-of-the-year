@@ -23,14 +23,7 @@ function App() {
             fill: "#6AFF19"
           },
           data: {
-            fill: (d) => {
-              let dateString = d.x;
-              if (isToday(dateString)) {
-                return '#EA00EB';
-              } else {
-                return d.fill;
-              }
-            }
+            fill: ({ datum }) => ( isToday(datum.x) ? "#EA00EB" : datum.fill )
           }
         }}
       />
