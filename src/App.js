@@ -1,7 +1,7 @@
 import React from 'react';
 import { VictoryPie, VictoryLabel } from 'victory';
 import { calendarDates } from './calendarDates.js';
-import { isToday } from './js/isToday.js';
+import { dayColor } from './js/dayColor.js';
 
 import './App.scss';
 
@@ -23,7 +23,7 @@ function App() {
             fill: "#6AFF19"
           },
           data: {
-            fill: ({ datum }) => ( isToday(datum.x) ? "#EA00EB" : datum.fill )
+            fill: ({ datum }) => dayColor( datum )
           }
         }}
       />
