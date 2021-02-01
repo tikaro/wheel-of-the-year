@@ -4,7 +4,7 @@ function fetchHours(date = new Date(2019,4,1)) {
     (async () => {
       try {
         // West Chester, PA is lat 39.9444, lon -75.1638
-        const darkSkyApiKey = "c9347fa8676b53635fc1ed28f4d43d46";
+        const darkSkyApiKey = process.env.DARK_SKY_API_KEY;
         const apiLat = '39.9444';
         const apiLon = '-75.1638';
         var unixDate = date.getTime() / 1000;
