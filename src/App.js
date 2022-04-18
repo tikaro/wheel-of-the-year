@@ -18,7 +18,7 @@ function App() {
         labels={() => null}
         style={{
           labels: { 
-            fontFamily: "'Noto Sans TC', sans-serif;",
+            fontFamily: "'Noto Sans TC', sans-serif",
             fontSize: "14px",
             fill: "#6AFF19"
           },
@@ -30,7 +30,7 @@ function App() {
       <VictoryLabel
           textAnchor="middle"
           style={{ 
-            fontFamily: "'Noto Sans TC', sans-serif;",
+            fontFamily: "'Noto Sans TC', sans-serif",
             fontSize: "14px",
             fill: "#379E00"
            }}
