@@ -19,7 +19,7 @@ function App() {
         style={{
           labels: { 
             fontFamily: "'Noto Sans TC', sans-serif",
-            fontSize: "14px",
+            fontSize: "8px",
             fill: "#6AFF19"
           },
           data: {

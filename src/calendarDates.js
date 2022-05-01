@@ -3,7 +3,7 @@ export const calendarDates = [
     "x": "June 21",
     "y": 1,
     "fill": "#52EB00",
-    "label": "夏至",
+    "label": "Litha\nJune 21",
     "sandex": 3
   },
   {
@@ -114,8 +114,8 @@ export const calendarDates = [
   {
     "x": "July 7",
     "y": 1,
-    "fill": "#52EB00",
-    "label": "小暑",
+    "fill": "",
+    "label": "",
     "sandex": 1
   },
   {
@@ -226,8 +226,8 @@ export const calendarDates = [
   {
     "x": "July 23",
     "y": 1,
-    "fill": "#52EB00",
-    "label": "大暑",
+    "fill": "",
+    "label": "",
     "sandex": 1
   },
   {
@@ -289,8 +289,8 @@ export const calendarDates = [
   {
     "x": "August 1",
     "y": 1,
-    "fill": "",
-    "label": "",
+    "fill": "#52EB00",
+    "label": "Lunasadh\nAugust 1",
     "sandex": 1
   },
   {
@@ -338,8 +338,8 @@ export const calendarDates = [
   {
     "x": "August 8",
     "y": 1,
-    "fill": "#6AFF19",
-    "label": "立秋",
+    "fill": "",
+    "label": "",
     "sandex": 3
   },
   {
@@ -443,8 +443,8 @@ export const calendarDates = [
   {
     "x": "August 23",
     "y": 1,
-    "fill": "#52EB00",
-    "label": "處暑",
+    "fill": "",
+    "label": "",
     "sandex": 4
   },
   {
@@ -555,8 +555,8 @@ export const calendarDates = [
   {
     "x": "September 8",
     "y": 1,
-    "fill": "#52EB00",
-    "label": "白露",
+    "fill": "",
+    "label": "",
     "sandex": 3
   },
   {
@@ -646,8 +646,8 @@ export const calendarDates = [
   {
     "x": "September 21",
     "y": 1,
-    "fill": "",
-    "label": "",
+    "fill": "#52EB00",
+    "label": "Mabon\nSeptember 21",
     "sandex": 2
   },
   {
@@ -660,8 +660,8 @@ export const calendarDates = [
   {
     "x": "September 23",
     "y": 1,
-    "fill": "#52EB00",
-    "label": "秋分",
+    "fill": "",
+    "label": "",
     "sandex": 5
   },
   {
@@ -765,8 +765,8 @@ export const calendarDates = [
   {
     "x": "October 8",
     "y": 1,
-    "fill": "#52EB00",
-    "label": "寒露",
+    "fill": "",
+    "label": "",
     "sandex": 2
   },
   {
@@ -870,8 +870,8 @@ export const calendarDates = [
   {
     "x": "October 23",
     "y": 1,
-    "fill": "#52EB00",
-    "label": "霜降",
+    "fill": "",
+    "label": "",
     "sandex": 0
   },
   {
@@ -926,8 +926,8 @@ export const calendarDates = [
   {
     "x": "October 31",
     "y": 1,
-    "fill": "",
-    "label": "",
+    "fill": "#52EB00",
+    "label": "Samhain\nOctober 31",
     "sandex": 1
   },
   {
@@ -975,8 +975,8 @@ export const calendarDates = [
   {
     "x": "November 7",
     "y": 1,
-    "fill": "#6AFF19",
-    "label": "立冬",
+    "fill": "",
+    "label": "",
     "sandex": 1
   },
   {
@@ -1080,8 +1080,8 @@ export const calendarDates = [
   {
     "x": "November 22",
     "y": 1,
-    "fill": "#52EB00",
-    "label": "小雪",
+    "fill": "",
+    "label": "",
     "sandex": 0
   },
   {
@@ -1185,8 +1185,8 @@ export const calendarDates = [
   {
     "x": "December 7",
     "y": 1,
-    "fill": "#52EB00",
-    "label": "大雪",
+    "fill": "",
+    "label": "",
     "sandex": 0
   },
   {
@@ -1290,8 +1290,8 @@ export const calendarDates = [
   {
     "x": "December 22",
     "y": 1,
-    "fill": "#52EB00",
-    "label": "冬至",
+    "fill": "",
+    "label": "",
     "sandex": 0
   },
   {
@@ -1304,8 +1304,8 @@ export const calendarDates = [
   {
     "x": "December 24",
     "y": 1,
-    "fill": "",
-    "label": "",
+    "fill": "#52EB00",
+    "label": "Yule\nDecember 24",
     "sandex": 0
   },
   {
@@ -1395,8 +1395,8 @@ export const calendarDates = [
   {
     "x": "January 6",
     "y": 1,
-    "fill": "#52EB00",
-    "label": "小寒",
+    "fill": "",
+    "label": "",
     "sandex": 0
   },
   {
@@ -1493,8 +1493,8 @@ export const calendarDates = [
   {
     "x": "January 20",
     "y": 1,
-    "fill": "#52EB00",
-    "label": "大寒",
+    "fill": "",
+    "label": "",
     "sandex": 0
   },
   {
@@ -1584,8 +1584,8 @@ export const calendarDates = [
   {
     "x": "February 2",
     "y": 1,
-    "fill": "",
-    "label": "",
+    "fill": "#52EB00",
+    "label": "Imbolc\nFebruary 2",
     "sandex": 0
   },
   {
@@ -1598,8 +1598,8 @@ export const calendarDates = [
   {
     "x": "February 4",
     "y": 1,
-    "fill": "#6AFF19",
-    "label": "立春",
+    "fill": "",
+    "label": "",
     "sandex": 0
   },
   {
@@ -1703,8 +1703,8 @@ export const calendarDates = [
   {
     "x": "February 19",
     "y": 1,
-    "fill": "#52EB00",
-    "label": "雨水",
+    "fill": "",
+    "label": "",
     "sandex": 1
   },
   {
@@ -1808,8 +1808,8 @@ export const calendarDates = [
   {
     "x": "March 6",
     "y": 1,
-    "fill": "#52EB00",
-    "label": "驚蟄",
+    "fill": "",
+    "label": "",
     "sandex": 0
   },
   {
@@ -1914,7 +1914,7 @@ export const calendarDates = [
     "x": "March 21",
     "y": 1,
     "fill": "#52EB00",
-    "label": "春分",
+    "label": "Ostara\nMarch 21",
     "sandex": 1
   },
   {
@@ -2018,8 +2018,8 @@ export const calendarDates = [
   {
     "x": "April 5",
     "y": 1,
-    "fill": "#52EB00",
-    "label": "清明",
+    "fill": "",
+    "label": "",
     "sandex": 0
   },
   {
@@ -2123,8 +2123,8 @@ export const calendarDates = [
   {
     "x": "April 20",
     "y": 1,
-    "fill": "#52EB00",
-    "label": "穀雨",
+    "fill": "",
+    "label": "",
     "sandex": 2
   },
   {
@@ -2200,8 +2200,8 @@ export const calendarDates = [
   {
     "x": "May 1",
     "y": 1,
-    "fill": "",
-    "label": "",
+    "fill": "#52EB00",
+    "label": "Beltane\nMay 1",
     "sandex": 2
   },
   {
@@ -2235,8 +2235,8 @@ export const calendarDates = [
   {
     "x": "May 6",
     "y": 1,
-    "fill": "#6AFF19",
-    "label": "立夏",
+    "fill": "",
+    "label": "",
     "sandex": 2
   },
   {
@@ -2340,8 +2340,8 @@ export const calendarDates = [
   {
     "x": "May 21",
     "y": 1,
-    "fill": "#52EB00",
-    "label": "小滿",
+    "fill": "",
+    "label": "",
     "sandex": 3
   },
   {
@@ -2452,8 +2452,8 @@ export const calendarDates = [
   {
     "x": "June 6",
     "y": 1,
-    "fill": "#52EB00",
-    "label": "芒種",
+    "fill": "",
+    "label": "",
     "sandex": 4
   },
   {
