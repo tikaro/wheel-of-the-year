@@ -8,18 +8,23 @@ import './App.scss';
 function App() {
   const [calendarSystem, setCalendarSystem] = useState('lunisolar');
 
+  const handleToggle = () => {
+    setCalendarSystem(calendarSystem === 'lunisolar' ? 'pagan' : 'lunisolar');
+  };
+
   return (
     <div className="App">
     <div className="calendar-selector">
-      <label htmlFor="calendar-system">Calendar System: </label>
-      <select 
-        id="calendar-system"
-        value={calendarSystem} 
-        onChange={(e) => setCalendarSystem(e.target.value)}
-      >
-        <option value="lunisolar">Lunisolar</option>
-        <option value="pagan">Pagan</option>
-      </select>
+      <span className="calendar-label">Chinese Lunisolar</span>
+      <label className="toggle-switch">
+        <input 
+          type="checkbox"
+          checked={calendarSystem === 'pagan'}
+          onChange={handleToggle}
+        />
+        <span className="slider"></span>
+      </label>
+      <span className="calendar-label">Pagan</span>
     </div>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
       <VictoryPie
@@ -35,7 +40,7 @@ function App() {
         style={{
           labels: { 
             fontFamily: "'Noto Sans TC', sans-serif",
-            fontSize: "14px",
+            fontSize: calendarSystem === 'pagan' ? "10px" : "14px",
             fill: "#6AFF19"
           },
           data: {

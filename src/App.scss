@@ -13,30 +13,63 @@ svg {
   padding: 20px;
   background-color: #f0f0f0;
   margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
   
-  label {
-    margin-right: 10px;
+  .calendar-label {
     font-weight: bold;
     color: #379E00;
+    font-size: 16px;
   }
   
-  select {
-    padding: 8px 12px;
-    font-size: 16px;
-    border: 2px solid #379E00;
-    border-radius: 4px;
-    background-color: white;
-    cursor: pointer;
-    font-family: 'Noto Sans TC', sans-serif;
+  .toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
     
-    &:hover {
-      border-color: #52EB00;
+    input {
+      opacity: 0;
+      width: 0;
+      height: 0;
     }
     
-    &:focus {
-      outline: none;
-      border-color: #6AFF19;
-      box-shadow: 0 0 5px rgba(106, 255, 25, 0.5);
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #379E00;
+      transition: .4s;
+      border-radius: 34px;
+      
+      &:before {
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        transition: .4s;
+        border-radius: 50%;
+      }
+    }
+    
+    input:checked + .slider {
+      background-color: #9E009E;
+    }
+    
+    input:focus + .slider {
+      box-shadow: 0 0 1px #9E009E;
+    }
+    
+    input:checked + .slider:before {
+      transform: translateX(26px);
     }
   }
 }
