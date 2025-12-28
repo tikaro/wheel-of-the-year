@@ -10,7 +10,7 @@ export const dayColor = (datum) => {
     if ( datum.x === dayToMatch ) { return "#EA00EB" }
     
     // Check if label object has any calendar system defined
-    if ( datum.label && Object.keys(datum.label).length > 0 ) { return "#9E009E" }
+    if ( datum.calendarLabels && Object.keys(datum.calendarLabels).length > 0 ) { return "#9E009E" }
 
     const colors = "#003300 #004400 #005500 #006600 #009900 #00CC00 #00FF00".split(' ');
     return colors[datum.sandex];

@@ -9,6 +9,38 @@ svg {
   text-align: center;
 }
 
+.calendar-selector {
+  padding: 20px;
+  background-color: #f0f0f0;
+  margin-bottom: 10px;
+  
+  label {
+    margin-right: 10px;
+    font-weight: bold;
+    color: #379E00;
+  }
+  
+  select {
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 2px solid #379E00;
+    border-radius: 4px;
+    background-color: white;
+    cursor: pointer;
+    font-family: 'Noto Sans TC', sans-serif;
+    
+    &:hover {
+      border-color: #52EB00;
+    }
+    
+    &:focus {
+      outline: none;
+      border-color: #6AFF19;
+      box-shadow: 0 0 5px rgba(106, 255, 25, 0.5);
+    }
+  }
+}
+
 .App-link {
   color: #61dafb;
 }
