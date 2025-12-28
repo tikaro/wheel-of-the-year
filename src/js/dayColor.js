@@ -1,4 +1,4 @@
-export const dayColor = (datum) => {
+export const dayColor = (datum, calendarSystem) => {
 
     // if the date is today, return #EA00EB
     const today = new Date();
@@ -9,8 +9,8 @@ export const dayColor = (datum) => {
     const dayToMatch = `${currentMonthName} ${currentDay}`;
     if ( datum.x === dayToMatch ) { return "#EA00EB" }
     
-    // Check if label object has any calendar system defined
-    if ( datum.calendarLabels && Object.keys(datum.calendarLabels).length > 0 ) { return "#9E009E" }
+    // Check if label exists for the currently active calendar system
+    if ( datum.calendarLabels && datum.calendarLabels[calendarSystem] ) { return "#9E009E" }
 
     const colors = "#003300 #004400 #005500 #006600 #009900 #00CC00 #00FF00".split(' ');
     return colors[datum.sandex];

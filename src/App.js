@@ -39,7 +39,7 @@ function App() {
             fill: "#6AFF19"
           },
           data: {
-            fill: ({ datum }) => dayColor( datum )
+            fill: ({ datum }) => dayColor( datum, calendarSystem )
           }
         }}
       />
