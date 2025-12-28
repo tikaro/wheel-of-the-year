@@ -1,3 +1,5 @@
+import { hasCalendarLabel } from '../utils/calendarUtils.js';
+
 export const dayColor = (datum, calendarSystem) => {
 
     // if the date is today, return #EA00EB
@@ -10,7 +12,7 @@ export const dayColor = (datum, calendarSystem) => {
     if ( datum.x === dayToMatch ) { return "#EA00EB" }
     
     // Check if label exists for the currently active calendar system
-    if ( datum.calendarLabels && datum.calendarLabels[calendarSystem] ) { return "#9E009E" }
+    if ( hasCalendarLabel(datum, calendarSystem) ) { return "#9E009E" }
 
     const colors = "#003300 #004400 #005500 #006600 #009900 #00CC00 #00FF00".split(' ');
     return colors[datum.sandex];
