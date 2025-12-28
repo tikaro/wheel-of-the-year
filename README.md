@@ -2,6 +2,21 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Development Environment
+
+### Using Dev Containers / Codespaces
+
+This repository includes a dev container configuration that provides a complete development environment with Node.js 20 and all necessary tools. You can use it with:
+
+- **GitHub Codespaces**: Click the "Code" button on GitHub and select "Create codespace"
+- **VS Code Dev Containers**: Install the Dev Containers extension and use "Reopen in Container"
+
+See [.devcontainer/README.md](.devcontainer/README.md) for more details.
+
+### Local Development
+
+To develop locally without a container, ensure you have Node.js 20+ and yarn installed.
+
 ## Available Scripts
 
 In the project directory, you can run:
