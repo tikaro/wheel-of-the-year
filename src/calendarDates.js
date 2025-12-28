@@ -3,7 +3,7 @@ export const calendarDates = [
     "x": "June 21",
     "y": 1,
     "fill": "#52EB00",
-    "calendarLabels": { "lunisolar": "夏至" },
+    "calendarLabels": { "lunisolar": "夏至", "pagan": "Litha" },
     "sandex": 3
   },
   {
@@ -290,7 +290,7 @@ export const calendarDates = [
     "x": "August 1",
     "y": 1,
     "fill": "",
-    "calendarLabels": {},
+    "calendarLabels": { "pagan": "Lughnasadh" },
     "sandex": 1
   },
   {
@@ -654,7 +654,7 @@ export const calendarDates = [
     "x": "September 22",
     "y": 1,
     "fill": "",
-    "calendarLabels": {},
+    "calendarLabels": { "pagan": "Mabon" },
     "sandex": 5
   },
   {
@@ -927,7 +927,7 @@ export const calendarDates = [
     "x": "October 31",
     "y": 1,
     "fill": "",
-    "calendarLabels": {},
+    "calendarLabels": { "pagan": "Samhain" },
     "sandex": 1
   },
   {
@@ -1284,7 +1284,7 @@ export const calendarDates = [
     "x": "December 21",
     "y": 1,
     "fill": "",
-    "calendarLabels": {},
+    "calendarLabels": {"pagan": "Yule"},
     "sandex": 0
   },
   {
@@ -1312,7 +1312,7 @@ export const calendarDates = [
     "x": "December 25",
     "y": 1,
     "fill": "",
-    "calendarLabels": {"pagan": "Yule"},
+    "calendarLabels": {},
     "sandex": 0
   },
   {
@@ -1578,7 +1578,7 @@ export const calendarDates = [
     "x": "February 1",
     "y": 1,
     "fill": "",
-    "calendarLabels": {},
+    "calendarLabels": { "pagan": "Imbolc" },
     "sandex": 0
   },
   {
@@ -1907,7 +1907,7 @@ export const calendarDates = [
     "x": "March 20",
     "y": 1,
     "fill": "",
-    "calendarLabels": {},
+    "calendarLabels": { "pagan": "Ostara" },
     "sandex": 0
   },
   {
@@ -2201,7 +2201,7 @@ export const calendarDates = [
     "x": "May 1",
     "y": 1,
     "fill": "",
-    "calendarLabels": {},
+    "calendarLabels": { "pagan": "Beltane" },
     "sandex": 2
   },
   {
