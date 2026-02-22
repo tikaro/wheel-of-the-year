@@ -7,23 +7,15 @@
     "@testing-library/react": "^16.3.2",
     "@testing-library/user-event": "^14.6.1",
     "node-fetch": "^3.3.2",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-scripts": "^5.0.1",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
     "victory": "^37.3.6",
     "web-vitals": "^5.1.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "start": "vite",
+    "build": "vite build",
+    "test": "vitest run"
   },
   "browserslist": {
     "production": [
@@ -38,6 +30,10 @@
     ]
   },
   "devDependencies": {
-    "sass": "^1.97.3"
+    "@vitejs/plugin-react": "^5.1.4",
+    "jsdom": "^28.1.0",
+    "sass": "^1.97.3",
+    "vite": "^7.3.1",
+    "vitest": "^4.0.18"
   }
 }
