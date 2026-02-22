@@ -2,6 +2,9 @@
 
 A React application built with [Vite](https://vite.dev/).
 
+## Deployment
+This application is deployed using [Netlify](https://app.netlify.com/projects/wheel-of-the-year/overview) to [wheel-of-the-year.tikaro.dev](https://wheel-of-the-year.tikaro.dev/).
+
 ## Development Environment
 
 ### Using Dev Containers / Codespaces
