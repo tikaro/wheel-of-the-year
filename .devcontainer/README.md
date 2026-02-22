@@ -21,13 +21,13 @@ The following extensions are automatically installed:
 - **Language Stylus** - Stylus syntax support
 
 ### Ports
-- **Port 3000** - React development server (automatically forwarded)
+- **Port 5173** - Vite development server (automatically forwarded)
 
 ### Post-Create Setup
 After the container is created, the `postcreate.sh` script will:
 1. Update apt packages
 2. Install lolcat for fun terminal output
-3. Run `yarn install` to install all project dependencies
+3. Run `npm install` to install all project dependencies
 4. Set up SSH directory with proper permissions
 
 ## Using the Dev Container
@@ -47,12 +47,12 @@ After the container is created, the `postcreate.sh` script will:
 
 Once inside the container, run:
 ```bash
-yarn start
+npm start
 ```
 
-The app will be available at `http://localhost:3000`
+The app will be available at `http://localhost:5173`
 
 ## Other Commands
 
-- `yarn test` - Run tests
-- `yarn build` - Build for production
+- `npm test` - Run tests
+- `npm run build` - Build for production
