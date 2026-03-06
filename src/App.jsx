@@ -62,7 +62,7 @@ function App() {
               target: "data",
               mutation: (props) => {
                 setHoveredDate(props.datum.x);
-                return null;
+                return { style: { ...props.style, fill: "#EA00EB", cursor: "pointer" } };
               }
             }],
             onMouseOut: () => [{
