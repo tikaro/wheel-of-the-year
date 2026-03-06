@@ -47,6 +47,13 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
+### `npm run sandex:refresh`
+
+Downloads fresh historical weather data from [Open-Meteo](https://open-meteo.com/en/docs/historical-weather-api),
+recomputes Sandex counts for all 365 day-of-year entries, and updates `src/calendarDates.js`
+in one step. Requires internet access. See [Refreshing Sandex Data](#refreshing-sandex-data)
+for details and individual step commands.
+
 ## Sandex Counts
 
 Each day-of-year slice in the wheel is colored by its **Sandex count** — the number
