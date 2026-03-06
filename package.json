@@ -15,7 +15,11 @@
   "scripts": {
     "start": "vite",
     "build": "vite build",
-    "test": "vitest run"
+    "test": "vitest run",
+    "sandex:fetch": "node scripts/fetchOpenMeteo.js",
+    "sandex:compute": "node scripts/computeSandexCounts.js",
+    "sandex:update": "node scripts/updateCalendarDates.js",
+    "sandex:refresh": "npm run sandex:fetch && npm run sandex:compute && npm run sandex:update"
   },
   "browserslist": {
     "production": [
