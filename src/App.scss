@@ -78,6 +78,19 @@ svg {
   color: #61dafb;
 }
 
+/* Visually hidden but announced by screen readers */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 /* Color Theme Swatches in Hex */
 .Purple-Carrot-shirt-green1-hex { color: #379E00; }
 .Purple-Carrot-shirt-green2-hex { color: #6AFF19; }

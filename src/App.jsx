@@ -9,6 +9,7 @@ import './App.scss';
 
 function App() {
   const [calendarSystem, setCalendarSystem] = useState(CALENDAR_SYSTEMS.LUNISOLAR);
+  const [hoveredDate, setHoveredDate] = useState(null);
 
   const handleToggle = () => {
     setCalendarSystem(
@@ -19,6 +20,13 @@ function App() {
   };
 
   const currentConfig = CALENDAR_CONFIG[calendarSystem];
+
+  const centerText = hoveredDate
+    ? hoveredDate
+    : (() => {
+        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        return new Date().toLocaleDateString("en-US", options);
+      })();
 
   return (
     <div className="App">
@@ -34,7 +42,12 @@ function App() {
       </label>
       <span className="calendar-label">{CALENDAR_CONFIG[CALENDAR_SYSTEMS.PAGAN].displayName}</span>
     </div>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 400 400"
+      role="img"
+      aria-label="Wheel of the Year pie chart. Hover over a slice to reveal its calendar date."
+    >
       <VictoryPie
         standalone={false}
         width={400} height={400}
@@ -42,6 +55,25 @@ function App() {
         innerRadius={120}
         labelRadius={160}
         labels={({ datum }) => getCalendarLabel(datum, calendarSystem)}
+        events={[{
+          target: "data",
+          eventHandlers: {
+            onMouseOver: () => [{
+              target: "data",
+              mutation: (props) => {
+                setHoveredDate(props.datum.x);
+                return null;
+              }
+            }],
+            onMouseOut: () => [{
+              target: "data",
+              mutation: () => {
+                setHoveredDate(null);
+                return null;
+              }
+            }]
+          }
+        }]}
         style={{
           labels: { 
             fontFamily: "'Noto Sans TC', sans-serif",
@@ -49,7 +81,8 @@ function App() {
             fill: "#6AFF19"
           },
           data: {
-            fill: ({ datum }) => dayColor( datum, calendarSystem )
+            fill: ({ datum }) => dayColor( datum, calendarSystem ),
+            cursor: "pointer"
           }
         }}
       />
@@ -61,15 +94,17 @@ function App() {
             fill: "#379E00"
            }}
           x={200} y={200}
-          text= { () => {
-              const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
-              return new Date().toLocaleDateString("en-US", options)
-            }
-          }
+          text={centerText}
         />
       <circle cx="200" cy="200" r="115" fill="none" stroke="#9E009E" strokeWidth={3} />
     </svg>
-    
+    <div
+      aria-live="polite"
+      aria-atomic="true"
+      className="sr-only"
+    >
+      {hoveredDate ? hoveredDate : ''}
+    </div>
     </div>
   );
 }
